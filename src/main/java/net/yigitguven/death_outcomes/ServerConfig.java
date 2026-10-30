@@ -7,6 +7,7 @@ public class ServerConfig {
 
     public static final ModConfigSpec.BooleanValue DROP_PLAYER_HEAD_ON_DEATH;
     public static final ModConfigSpec.BooleanValue DROP_PLAYER_HEAD_ONLY_WHEN_KILLED_BY_PLAYER;
+    public static final ModConfigSpec.BooleanValue ENABLE_PLAYER_TRACKING_COMPASS_RECIPE;
 
     static {
         BUILDER.push("player_head_drops");
@@ -19,6 +20,14 @@ public class ServerConfig {
                 .comment("Whether player heads should only drop if the death was caused directly or indirectly by another player.",
                          "If false (and dropPlayerHeadOnDeath is true), heads will drop on any death.")
                 .define("dropPlayerHeadOnlyWhenKilledByPlayer", true);
+
+        BUILDER.pop();
+
+        BUILDER.push("tracking_compass");
+
+        ENABLE_PLAYER_TRACKING_COMPASS_RECIPE = BUILDER
+                .comment("Whether crafting a tracking compass by combining a compass and player head is enabled.")
+                .define("enablePlayerTrackingCompassRecipe", true);
 
         BUILDER.pop();
     }

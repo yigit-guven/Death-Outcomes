@@ -30,6 +30,11 @@ Below is the structure of the `death_outcomes-server.toml` file:
     # If false (and dropPlayerHeadOnDeath is true), heads will drop on any death.
     # Default: true
     dropPlayerHeadOnlyWhenKilledByPlayer = true
+
+[tracking_compass]
+    # Whether crafting a tracking compass by combining a compass and player head is enabled.
+    # Default: true
+    enablePlayerTrackingCompassRecipe = true
 ```
 
 ### Option Breakdown
@@ -37,7 +42,8 @@ Below is the structure of the `death_outcomes-server.toml` file:
 | Option | Type | Default | Description |
 | :--- | :--- | :--- | :--- |
 | `dropPlayerHeadOnDeath` | `boolean` | `true` | Master toggle for player head drops on death. Set to `false` to disable head drops entirely. |
-| `dropPlayerHeadOnlyWhenKilledByPlayer` | `boolean` | `true` | When `true`, only PvP deaths (direct weapon hits, arrows, potions, etc.) drop heads. When `false`, **any** death (mobs, fall damage, lava, etc.) drops the player's head. |
+| `dropPlayerHeadOnlyWhenKilledByPlayer` | `boolean` | `true` | When `true`, only PvP deaths drop heads. When `false`, **any** death drops the player's head. |
+| `enablePlayerTrackingCompassRecipe` | `boolean` | `true` | Master toggle for crafting a tracking compass by combining a Compass with a Player Head in a crafting grid. |
 
 ---
 
@@ -48,21 +54,19 @@ Below is the structure of the `death_outcomes-server.toml` file:
 [player_head_drops]
     dropPlayerHeadOnDeath = true
     dropPlayerHeadOnlyWhenKilledByPlayer = true
-```
-> Players only earn heads by defeating other players in combat.
 
-### 2. Fun / Casual PvE & SMP
+[tracking_compass]
+    enablePlayerTrackingCompassRecipe = true
+```
+> Players only earn heads by defeating other players in combat, and can craft Player Compasses to track them.
+
+### 2. Casual PvE / SMP (No Tracking)
 ```toml
 [player_head_drops]
     dropPlayerHeadOnDeath = true
     dropPlayerHeadOnlyWhenKilledByPlayer = false
-```
-> Every single death drops a head, regardless of cause (creepers, falling, lava, etc.).
 
-### 3. Disabled Head Drops
-```toml
-[player_head_drops]
-    dropPlayerHeadOnDeath = false
+[tracking_compass]
+    enablePlayerTrackingCompassRecipe = false
 ```
-> Disables the player head drop mechanic completely.
-
+> Heads drop on any death, but player tracking compasses cannot be crafted.

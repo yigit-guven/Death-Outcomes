@@ -15,5 +15,6 @@ public class DeathOutcomes {
     public DeathOutcomes(IEventBus modEventBus, ModContainer modContainer) {
         LOGGER.info("Initializing {}", MODID);
         modContainer.registerConfig(ModConfig.Type.SERVER, ServerConfig.SPEC);
+        ModRecipes.register(modEventBus);
     }
 }
