@@ -2,8 +2,6 @@
 
 ![Death Outcomes Banner](docs/assets/banner.png)
 
-# Death Outcomes
-
 **Trophies, tracking compasses, and meaningful consequences for player deaths in Minecraft.**
 
 [![Server-Side](https://img.shields.io/badge/Environment-Server--Side%20Only-brightgreen.svg)]()
