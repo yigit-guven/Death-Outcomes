@@ -1,4 +1,4 @@
-# Configuration
+# Server Configuration
 
 Death Outcomes uses server configuration files saved per world/save.
 
@@ -48,8 +48,8 @@ Below is the structure of the `death_outcomes-server.toml` file:
 
 ### Option Breakdown
 
-| Option | Type | Default | Description |
-| :--- | :--- | :--- | :--- |
+| Setting | Type | Default | Description |
+| :--- | :---: | :---: | :--- |
 | `dropPlayerHeadOnDeath` | `boolean` | `true` | Master toggle for player head drops on death. Set to `false` to disable head drops entirely. |
 | `dropPlayerHeadOnlyWhenKilledByPlayer` | `boolean` | `true` | When `true`, only PvP deaths drop heads. When `false`, **any** death drops the player's head. |
 | `dropPlayerHeadOnlyOnceEver` | `boolean` | `false` | When `true`, each player can only ever drop their head once across the lifetime of the world. Subsequent deaths will never yield another head for that player. |
@@ -58,9 +58,11 @@ Below is the structure of the `death_outcomes-server.toml` file:
 
 ---
 
-## Common Use Cases
+## Common Server Presets
 
 ### 1. Hardcore / Trophy PvP (Default)
+Best for competitive SMPs and faction servers where player heads are hard-earned bounty trophies:
+
 ```toml
 [player_head_drops]
     dropPlayerHeadOnDeath = true
@@ -72,15 +74,34 @@ Below is the structure of the `death_outcomes-server.toml` file:
     enablePlayerCompassDismantleRecipe = false
 ```
 
-### 2. Recyclable Tracking Compasses
+---
+
+### 2. Limited "One-Time Trophy" World
+Perfect for survival challenges or manhunts where each player's head can only be claimed once ever:
+
 ```toml
 [player_head_drops]
     dropPlayerHeadOnDeath = true
     dropPlayerHeadOnlyWhenKilledByPlayer = true
+    dropPlayerHeadOnlyOnceEver = true
+
+[tracking_compass]
+    enablePlayerTrackingCompassRecipe = true
+    enablePlayerCompassDismantleRecipe = true
+```
+
+---
+
+### 3. Casual PvE / Fun Cosmetics
+Drop heads on all deaths (including mobs, falls, lava) and allow compass dismantling:
+
+```toml
+[player_head_drops]
+    dropPlayerHeadOnDeath = true
+    dropPlayerHeadOnlyWhenKilledByPlayer = false
     dropPlayerHeadOnlyOnceEver = false
 
 [tracking_compass]
     enablePlayerTrackingCompassRecipe = true
     enablePlayerCompassDismantleRecipe = true
 ```
-> Allows players to retrieve their trophy player head back by placing the compass in a crafting grid.
