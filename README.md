@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/yigit-guven/Death-Outcomes/main/docs/assets/banner.png" alt="Death Outcomes" />
+<img src="https://github.com/yigit-guven/Death-Outcomes/blob/1.21.1-neoforge/docs/assets/banner.png" alt="Death Outcomes" />
 
 <br />
 
@@ -36,9 +36,7 @@
 <div align="center">
 <table>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/yigit-guven/Death-Outcomes/main/docs/assets/player_head_3d.png" width="96" height="102" /><br /><b>Player Head</b></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/yigit-guven/Death-Outcomes/main/docs/assets/skeleton_head_3d.png" width="96" height="102" /><br /><b>Skeleton Skull</b></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/yigit-guven/Death-Outcomes/main/docs/assets/pumpkin_head_3d.png" width="96" height="102" /><br /><b>Carved Pumpkin</b></td>
+    <td align="center"><img src="https://github.com/yigit-guven/Death-Outcomes/blob/1.21.1-neoforge/docs/assets/player_head_3d.png" width="96" height="102" /><br /><b>Player Head</b></td>
   </tr>
 </table>
 </div>
@@ -55,7 +53,7 @@
 ### 2. Player's Compass (Tracking Compass)
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/yigit-guven/Death-Outcomes/main/docs/assets/enchanted_compass.gif" width="96" height="96" />
+  <img src="https://github.com/yigit-guven/Death-Outcomes/blob/1.21.1-neoforge/docs/assets/enchanted_compass.gif" width="96" height="96" />
   <br />
   <b><i>Player's Compass</i></b>
   <br />
@@ -65,7 +63,7 @@
 Combine a standard **Compass** with any **Player Head** in any 2x2 or 3x3 crafting grid to craft a **Player's Compass**:
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/yigit-guven/Death-Outcomes/main/docs/assets/crafting_player_compass.png" width="416" height="197" />
+  <img src="https://github.com/yigit-guven/Death-Outcomes/blob/1.21.1-neoforge/docs/assets/crafting_player_compass.png" width="416" height="197" />
   <p><i>Crafting Recipe: Compass + Player Head = Player's Compass</i></p>
 </div>
 
@@ -75,7 +73,7 @@ Combine a standard **Compass** with any **Player Head** in any 2x2 or 3x3 crafti
 * **Head Recovery / Dismantling (Optional)**: When enabled in server settings, placing a Player's Compass alone into any crafting grid dismantles it and returns the original player head:
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/yigit-guven/Death-Outcomes/main/docs/assets/crafting_dismantle.png" width="416" height="197" />
+  <img src="https://github.com/yigit-guven/Death-Outcomes/blob/1.21.1-neoforge/docs/assets/crafting_dismantle.png" width="416" height="197" />
   <p><i>Dismantle Recipe: Player's Compass = Player Head</i></p>
 </div>
 
