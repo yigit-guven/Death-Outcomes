@@ -1,0 +1,13 @@
+{
+  "itemGroup.death_outcomes": "Example Mod Tab",
+  "block.death_outcomes.example_block": "Example Block",
+  "item.death_outcomes.example_item": "Example Item",
+
+  "death_outcomes.configuration.title": "Death Outcomes Configs",
+  "death_outcomes.configuration.section.death_outcomes.common.toml": "Death Outcomes Configs",
+  "death_outcomes.configuration.section.death_outcomes.common.toml.title": "Death Outcomes Configs",
+  "death_outcomes.configuration.items": "Item List",
+  "death_outcomes.configuration.logDirtBlock": "Log Dirt Block",
+  "death_outcomes.configuration.magicNumberIntroduction": "Magic Number Text",
+  "death_outcomes.configuration.magicNumber": "Magic Number"
+}
