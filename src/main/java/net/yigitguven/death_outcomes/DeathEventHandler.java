@@ -32,6 +32,14 @@ public class DeathEventHandler {
             }
         }
 
+        if (ServerConfig.DROP_PLAYER_HEAD_ONLY_ONCE_EVER.get()) {
+            PlayerHeadDropHistoryData historyData = PlayerHeadDropHistoryData.get(victim.serverLevel());
+            if (historyData.hasDroppedHead(victim.getUUID())) {
+                return;
+            }
+            historyData.markHeadDropped(victim.getUUID());
+        }
+
         ItemStack headStack = new ItemStack(Items.PLAYER_HEAD);
         headStack.set(DataComponents.PROFILE, new ResolvableProfile(victim.getGameProfile()));
 
@@ -61,4 +69,3 @@ public class DeathEventHandler {
         return false;
     }
 }
-

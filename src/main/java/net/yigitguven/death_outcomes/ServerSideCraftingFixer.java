@@ -68,11 +68,14 @@ public class ServerSideCraftingFixer {
                 Optional<RecipeHolder<CraftingRecipe>> match = serverPlayer.serverLevel().getRecipeManager()
                         .getRecipeFor(RecipeType.CRAFTING, input, serverPlayer.serverLevel());
 
-                if (match.isPresent() && match.get().value() instanceof PlayerTrackingCompassRecipe customRecipe) {
-                    ItemStack assembled = customRecipe.assemble(input, serverPlayer.serverLevel().registryAccess());
-                    if (!assembled.isEmpty()) {
-                        resultSlot.set(assembled);
-                        containerMenu.broadcastChanges();
+                if (match.isPresent()) {
+                    CraftingRecipe recipe = match.get().value();
+                    if (recipe instanceof PlayerTrackingCompassRecipe || recipe instanceof PlayerCompassDismantleRecipe) {
+                        ItemStack assembled = recipe.assemble(input, serverPlayer.serverLevel().registryAccess());
+                        if (!assembled.isEmpty()) {
+                            resultSlot.set(assembled);
+                            containerMenu.broadcastChanges();
+                        }
                     }
                 }
             }
