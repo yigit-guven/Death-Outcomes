@@ -1,1 +1,19 @@
-{}
+{
+  "death_outcomes.configuration.title": "Death Outcomes Configuration",
+  "death_outcomes.configuration.section.death.outcomes.server.toml": "Server Configuration",
+  "death_outcomes.configuration.section.death.outcomes.server.toml.title": "Death Outcomes Server Settings",
+  "death_outcomes.configuration.player_head_drops": "Player Head Drops",
+  "death_outcomes.configuration.player_head_drops.button": "Edit Head Drop Settings",
+  "death_outcomes.configuration.dropPlayerHeadOnDeath": "Drop Player Head On Death",
+  "death_outcomes.configuration.dropPlayerHeadOnDeath.tooltip": "Whether players should drop their head upon death.",
+  "death_outcomes.configuration.dropPlayerHeadOnlyWhenKilledByPlayer": "Only Drop When Killed By Player",
+  "death_outcomes.configuration.dropPlayerHeadOnlyWhenKilledByPlayer.tooltip": "Whether player heads should only drop if the death was caused directly or indirectly by another player.",
+  "death_outcomes.configuration.dropPlayerHeadOnlyOnceEver": "Drop Head Only Once Ever",
+  "death_outcomes.configuration.dropPlayerHeadOnlyOnceEver.tooltip": "Whether a player's head should only ever drop once per world. Once dropped, subsequent deaths will not drop their head.",
+  "death_outcomes.configuration.tracking_compass": "Player Tracking Compass",
+  "death_outcomes.configuration.tracking_compass.button": "Edit Compass Settings",
+  "death_outcomes.configuration.enablePlayerTrackingCompassRecipe": "Enable Tracking Compass Recipe",
+  "death_outcomes.configuration.enablePlayerTrackingCompassRecipe.tooltip": "Whether crafting a tracking compass by combining a compass and player head is enabled.",
+  "death_outcomes.configuration.enablePlayerCompassDismantleRecipe": "Enable Compass Dismantle Recipe",
+  "death_outcomes.configuration.enablePlayerCompassDismantleRecipe.tooltip": "Whether placing a Player's Compass alone in a crafting grid dismantles and returns the player head back."
+}
