@@ -123,4 +123,4 @@ Settings are saved per world at:
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [GNU Lesser General Public License v3.0](https://github.com/yigit-guven/Death-Outcomes/blob/1.21.1-neoforge/LICENSE) (LGPL-3.0-only).
