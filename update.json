@@ -1,11 +1,11 @@
 {
   "homepage": "https://modrinth.com/mod/death-outcomes",
   "promos": {
-    "1.21.1-latest": "1.0.0",
-    "1.21.1-recommended": "1.0.0"
+    "1.21.1-latest": "1.0.1",
+    "1.21.1-recommended": "1.0.1"
   },
   "1.21.1": {
-    "1.0.1": "",
+    "1.0.1": "Fixed client disconnection caused by custom recipe serializer registry keys on vanilla/unmodded clients, and added a client configuration screen.",
     "1.0.0": "Initial release"
   }
 }

@@ -105,7 +105,7 @@ public class PlayerCompassDismantleRecipe extends CustomRecipe {
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return ModRecipes.PLAYER_COMPASS_DISMANTLE_SERIALIZER.get();
+        return RecipeSerializer.BOOK_CLONING;
     }
 }
 

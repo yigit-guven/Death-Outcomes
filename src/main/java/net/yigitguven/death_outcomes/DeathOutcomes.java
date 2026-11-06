@@ -19,6 +19,5 @@ public class DeathOutcomes {
         if (FMLEnvironment.dist.isClient()) {
             ClientConfigHelper.registerConfigScreen(modContainer);
         }
-        ModRecipes.register(modEventBus);
     }
 }

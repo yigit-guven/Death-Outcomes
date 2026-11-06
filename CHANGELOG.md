@@ -2,10 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.0.1] - 2026-10-30
+## [1.0.1] - 2026-11-06
 
 ### Added
-- 
+- Client-side configuration screen (`IConfigScreenFactory`) with localized labels and tooltips for all server configuration options.
+
+### Fixed
+- Fixed a "The server send registries with unknown keys" disconnection error (`death_outcomes:crafting_special_player_tracking_compass` and `death_outcomes:crafting_special_player_compass_dismantle`) when clients without the mod join a server with Death Outcomes installed.
 
 ## [1.0.0] - 2026-10-30
 

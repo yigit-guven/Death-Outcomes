@@ -125,6 +125,6 @@ public class PlayerTrackingCompassRecipe extends CustomRecipe {
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return ModRecipes.PLAYER_TRACKING_COMPASS_SERIALIZER.get();
+        return RecipeSerializer.MAP_CLONING;
     }
 }
